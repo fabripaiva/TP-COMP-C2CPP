@@ -9,13 +9,13 @@
     #include <stdlib.h>
     #include<stdio.h>
     //#include"y.tab.h"
-    void yyerror(const char *);
-    static void comentarioNoterminado(void);
+   // void yyerror(const char *);
+    //static void comentarioNoterminado(void);
 %}
 
 
 %%
-"/*"                        { comentarioNoterminado(); }
+"/*"                        { /*comentarioNoterminado(); */}
 "//".*                      { /*NO comentario*/ }
 [\n\t ]+                    {/* ignoring newlines, tabs and spaces */}
 "/\*"(.|\n)*"\*/"			{strcpy(yylval.var_name, yytext);return MLCOMENTARIO;}
@@ -95,7 +95,7 @@ int yywrap(void) {
 	return 1;
 }
 
-static void comentarioNoterminado(void)
+/**static void comentarioNoterminado(void)
 {
     int c;
 
@@ -119,3 +119,24 @@ void yyerror(const char *s)
 {
 	printf("[ERROR en la linea: %d] %s %s\n",  yylineno,s,yytext);
 }
+
+static void comentarioNoterminado(void)
+{
+    int c;
+
+    while ((c = input()) != 0)
+        if (c == '*')
+        {
+            while ((c = input()) == '*')
+                ;
+
+            if (c == '/')
+                return;
+
+            if (c == 0)
+                break;
+        }
+    yyerror("comentario No terminado!");
+}*/
+
+

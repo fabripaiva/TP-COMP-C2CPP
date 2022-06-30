@@ -17,6 +17,17 @@
 	int tab_counter = 0;
 	int func_bandera = 0;
 	char for_var[MAX_NAME_LEN];
+	struct simbolRec
+{
+	char *name;			
+	char *type;			
+	int function;
+	struct simbolRec *next;		
+};
+
+typedef struct simbolRec simbolRec;
+
+extern simbolRec *simbolTable;
 	// Declaro e inicializo explícitamente
 	struct symbol_table{char var_name[MAX_NAME_LEN]; int type;} sym[MAX_VARIABLES];
 	extern int lookup_in_table(char var[MAX_NAME_LEN]);
@@ -283,7 +294,7 @@ int yyerror(const char *msg) {
 	return 0;
 }
 
-void type_comprobacion(char* op1, char* op2, char operation)
+/**void type_comprobacion(char* op1, char* op2, char operation)
 {
 	simbolRec* simbolRec_operando1 = getSimbol(op1);
 	simbolRec* simbolRec_operando2 = getSimbol(op2);
@@ -311,4 +322,4 @@ void type_comprobacion(char* op1, char* op2, char operation)
 			printf("[ERROR línea %d]Operando %s con %c no permitido por (%s)\n", yylineno,op1, operation, type_op1 );
 		}
 	}
-}
+}*/

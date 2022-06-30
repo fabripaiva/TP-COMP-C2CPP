@@ -370,8 +370,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 53
-#define YY_END_OF_BUFFER 54
+#define YY_NUM_RULES 55
+#define YY_END_OF_BUFFER 56
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -381,21 +381,21 @@ struct yy_trans_info
 	};
 static const flex_int16_t yy_accept[142] =
     {   0,
-        0,    0,   54,   53,    1,   45,   53,   53,   49,   44,
-       53,   53,   23,   24,   42,   40,   30,   41,   43,   50,
-       21,   29,   37,   31,   36,   22,   27,   28,   49,   49,
-       49,   49,   49,   49,   49,   49,   49,   49,   49,   49,
-       25,   53,   26,    1,   38,    0,   51,    0,   49,   49,
-       32,    0,   52,    0,    3,    0,   50,   35,   39,   34,
-       49,   49,   49,   49,   20,   49,   49,   49,   49,   11,
-       49,   49,   49,   49,   49,   49,   49,   33,    0,    0,
-        0,    3,   50,   49,   49,   49,   49,   49,   49,   49,
-       49,   13,    4,   49,   49,   49,   49,   49,   49,    0,
+        0,    0,   56,   55,    3,   47,   55,   55,   51,   46,
+       55,   55,   25,   26,   44,   42,   32,   43,   45,   52,
+       23,   31,   39,   33,   38,   24,   29,   30,   51,   51,
+       51,   51,   51,   51,   51,   51,   51,   51,   51,   51,
+       27,   55,   28,    3,   40,    0,   53,    0,   51,   51,
+       34,    0,   54,    1,    2,    0,   52,   37,   41,   36,
+       51,   51,   51,   51,   22,   51,   51,   51,   51,   13,
+       51,   51,   51,   51,   51,   51,   51,   35,    0,    0,
+        0,    2,   52,   51,   51,   51,   51,   51,   51,   51,
+       51,   15,    6,   51,   51,   51,   51,   51,   51,    0,
 
-        2,    8,   49,    5,   49,   49,   12,   49,   49,    0,
-       49,   49,   49,   48,   17,   49,    0,   15,    9,   49,
-        0,    6,    0,   49,   49,   49,   14,    0,    7,    0,
-        0,   16,   19,   47,   46,   18,    0,    0,    0,   10,
+        4,   10,   51,    7,   51,   51,   14,   51,   51,    0,
+       51,   51,   51,   50,   19,   51,    0,   17,   11,   51,
+        0,    8,    0,   51,   51,   51,   16,    0,    9,    0,
+        0,   18,   21,   49,   48,   20,    0,    0,    0,   12,
         0
     } ;
 
@@ -556,11 +556,11 @@ static const flex_int16_t yy_chk[297] =
     } ;
 
 /* Table of booleans, true if rule could match eol. */
-static const flex_int32_t yy_rule_can_match_eol[54] =
+static const flex_int32_t yy_rule_can_match_eol[56] =
     {   0,
-1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0,     };
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0,     };
 
 static yy_state_type yy_last_accepting_state;
 static char *yy_last_accepting_cpos;
@@ -576,17 +576,19 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "c2cpp.l"
-/***************************/
-/*      declaraciones      */
-/***************************/
-#line 8 "c2cpp.l"
+#line 1 "traductor.l"
+/*****************************************/
+/*      DECLARACIONES DE SENTENCIAS      */
+/*****************************************/
+#line 8 "traductor.l"
+	#include <string.h>
+    #include <stdlib.h>
     #include<stdio.h>
     //#include"y.tab.h"
-    #include <string.h>
-    #include <stdlib.h>
-#line 589 "lex.yy.c"
-#line 590 "lex.yy.c"
+   // void yyerror(const char *);
+    //static void comentarioNoterminado(void);
+#line 591 "lex.yy.c"
+#line 592 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -803,10 +805,9 @@ YY_DECL
 		}
 
 	{
-#line 15 "c2cpp.l"
+#line 17 "traductor.l"
 
-
-#line 810 "lex.yy.c"
+#line 811 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -874,275 +875,285 @@ do_action:	/* This label is used only to access EOF actions. */
 			goto yy_find_action;
 
 case 1:
-/* rule 1 can match eol */
 YY_RULE_SETUP
-#line 17 "c2cpp.l"
-{/* ignoring newlines, tabs and spaces */}
+#line 18 "traductor.l"
+{ /*comentarioNoterminado(); */}
 	YY_BREAK
 case 2:
-/* rule 2 can match eol */
 YY_RULE_SETUP
-#line 19 "c2cpp.l"
-{strcpy(yylval.var_name, yytext);return MLCOMENTARIO;}
+#line 19 "traductor.l"
+{ /*NO comentario*/ }
 	YY_BREAK
 case 3:
+/* rule 3 can match eol */
 YY_RULE_SETUP
-#line 20 "c2cpp.l"
-{strcpy(yylval.var_name, yytext);return COMENTARIO;}
+#line 20 "traductor.l"
+{/* ignoring newlines, tabs and spaces */}
 	YY_BREAK
 case 4:
+/* rule 4 can match eol */
 YY_RULE_SETUP
-#line 23 "c2cpp.l"
-{yylval.data_type=0; return INT;}
+#line 21 "traductor.l"
+{strcpy(yylval.var_name, yytext);return MLCOMENTARIO;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 24 "c2cpp.l"
-{yylval.data_type=1; return CHAR;}
+#line 22 "traductor.l"
+{strcpy(yylval.var_name, yytext);return COMENTARIO;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 25 "c2cpp.l"
-{yylval.data_type=2; return FLOAT;}
+#line 26 "traductor.l"
+{yylval.data_type=0; return INT;}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 26 "c2cpp.l"
-{yylval.data_type=3; return DOUBLE;}
+#line 27 "traductor.l"
+{yylval.data_type=1; return CHAR;}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 27 "c2cpp.l"
-{yylval.data_type=4; return BOOLEAN;}
+#line 28 "traductor.l"
+{yylval.data_type=2; return FLOAT;}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 28 "c2cpp.l"
-{return CONST;}
+#line 29 "traductor.l"
+{yylval.data_type=3; return DOUBLE;}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 31 "c2cpp.l"
-{return MAIN_FUNC;}
+#line 30 "traductor.l"
+{yylval.data_type=4; return BOOLEAN;}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 34 "c2cpp.l"
-{return IF;}
+#line 31 "traductor.l"
+{return CONST;}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 35 "c2cpp.l"
-{return ELSE;}
+#line 34 "traductor.l"
+{return MAIN_FUNC;}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 36 "c2cpp.l"
-{return FOR;}
+#line 37 "traductor.l"
+{return IF;}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 37 "c2cpp.l"
-{return WHILE;}
+#line 38 "traductor.l"
+{return ELSE;}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 38 "c2cpp.l"
-{return BREAK;}
+#line 39 "traductor.l"
+{return FOR;}
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 39 "c2cpp.l"
-{return PRINTF;}
+#line 40 "traductor.l"
+{return WHILE;}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 40 "c2cpp.l"
-{return VOID;}
+#line 41 "traductor.l"
+{return BREAK;}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 43 "c2cpp.l"
-{return ELSEIF;}
+#line 42 "traductor.l"
+{return PRINTF;}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 44 "c2cpp.l"
-{return RETURN;}
+#line 43 "traductor.l"
+{return VOID;}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 46 "c2cpp.l"
-{return DO;}
+#line 46 "traductor.l"
+{return ELSEIF;}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 49 "c2cpp.l"
-{return COLON;}
+#line 47 "traductor.l"
+{return RETURN;}
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 50 "c2cpp.l"
-{return QM;}
+#line 49 "traductor.l"
+{return DO;}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 51 "c2cpp.l"
-{return LP;}
+#line 52 "traductor.l"
+{return COLON;}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 52 "c2cpp.l"
-{return RP;}
+#line 53 "traductor.l"
+{return QM;}
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 53 "c2cpp.l"
-{return LC;}
+#line 54 "traductor.l"
+{return LP;}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 54 "c2cpp.l"
-{return RC;}
+#line 55 "traductor.l"
+{return RP;}
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 55 "c2cpp.l"
-{return LB;}
+#line 56 "traductor.l"
+{return LC;}
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 56 "c2cpp.l"
-{return RB;}
+#line 57 "traductor.l"
+{return RC;}
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 57 "c2cpp.l"
-{return SEMICOLON;}
+#line 58 "traductor.l"
+{return LB;}
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 58 "c2cpp.l"
-{return COMA;}
+#line 59 "traductor.l"
+{return RB;}
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 59 "c2cpp.l"
-{return ASSIGNMENT;}
+#line 60 "traductor.l"
+{return SEMICOLON;}
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 60 "c2cpp.l"
-{return LAND;}
+#line 61 "traductor.l"
+{return COMA;}
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 61 "c2cpp.l"
-{return LOR;}
+#line 62 "traductor.l"
+{return ASSIGNMENT;}
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 62 "c2cpp.l"
-{return GEQ;}
+#line 63 "traductor.l"
+{return LAND;}
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 63 "c2cpp.l"
-{return LEQ;}
+#line 64 "traductor.l"
+{return LOR;}
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 64 "c2cpp.l"
-{return GT;}
+#line 65 "traductor.l"
+{return GEQ;}
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 65 "c2cpp.l"
-{return LT;}
+#line 66 "traductor.l"
+{return LEQ;}
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 66 "c2cpp.l"
-{return NEQ;}
+#line 67 "traductor.l"
+{return GT;}
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 67 "c2cpp.l"
-{return DEQ;}
+#line 68 "traductor.l"
+{return LT;}
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 68 "c2cpp.l"
-{return PLUS;}
+#line 69 "traductor.l"
+{return NEQ;}
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 69 "c2cpp.l"
-{return MINUS;}
+#line 70 "traductor.l"
+{return DEQ;}
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 70 "c2cpp.l"
-{return MUL;}
+#line 71 "traductor.l"
+{return PLUS;}
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 71 "c2cpp.l"
-{return DIV;}
+#line 72 "traductor.l"
+{return MINUS;}
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 72 "c2cpp.l"
-{return MOD;}
+#line 73 "traductor.l"
+{return MUL;}
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 73 "c2cpp.l"
-{return NOT;}
+#line 74 "traductor.l"
+{return DIV;}
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 74 "c2cpp.l"
-{return DEFINE;}
+#line 75 "traductor.l"
+{return MOD;}
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 76 "c2cpp.l"
-{return STATIC;}
+#line 76 "traductor.l"
+{return NOT;}
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 78 "c2cpp.l"
-{strcpy(yylval.var_name, yytext);return BOOL_VAL;}
+#line 77 "traductor.l"
+{return DEFINE;}
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 80 "c2cpp.l"
-{strcpy(yylval.var_name, yytext);return VAR;}
+#line 79 "traductor.l"
+{return STATIC;}
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 82 "c2cpp.l"
-{strcpy(yylval.var_name, yytext);return NUMBER;}
+#line 81 "traductor.l"
+{strcpy(yylval.var_name, yytext);return BOOL_VAL;}
 	YY_BREAK
 case 51:
-/* rule 51 can match eol */
 YY_RULE_SETUP
-#line 84 "c2cpp.l"
-{strcpy(yylval.var_name, yytext);return QUOTED_STRING;}
+#line 83 "traductor.l"
+{strcpy(yylval.var_name, yytext);return VAR;}
 	YY_BREAK
 case 52:
-/* rule 52 can match eol */
 YY_RULE_SETUP
-#line 86 "c2cpp.l"
-{strcpy(yylval.var_name, yytext);return QUOTED_CHAR;}
+#line 85 "traductor.l"
+{strcpy(yylval.var_name, yytext);return NUMBER;}
 	YY_BREAK
 case 53:
+/* rule 53 can match eol */
 YY_RULE_SETUP
-#line 89 "c2cpp.l"
+#line 87 "traductor.l"
+{strcpy(yylval.var_name, yytext);return QUOTED_STRING;}
+	YY_BREAK
+case 54:
+/* rule 54 can match eol */
+YY_RULE_SETUP
+#line 89 "traductor.l"
+{strcpy(yylval.var_name, yytext);return QUOTED_CHAR;}
+	YY_BREAK
+case 55:
+YY_RULE_SETUP
+#line 92 "traductor.l"
 ECHO;
 	YY_BREAK
-#line 1146 "lex.yy.c"
+#line 1157 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -2159,10 +2170,56 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 89 "c2cpp.l"
+#line 92 "traductor.l"
 
 
 int yywrap(void) {
 	return 1;
 }
+
+/**static void comentarioNoterminado(void)
+{
+    int c;
+
+    while ((c = input()) != 0)
+        if (c == '*')
+        {
+            while ((c = input()) == '*')
+                ;
+
+            if (c == '/')
+                return;
+
+            if (c == 0)
+                break;
+        }
+    yyerror("comentario No terminado!");
+}
+
+//Funcion de avisar en que linea esta que el error por si falla la primera funcion "yywrap"
+void yyerror(const char *s)
+{
+	printf("[ERROR en la linea: %d] %s %s\n",  yylineno,s,yytext);
+}
+
+static void comentarioNoterminado(void)
+{
+    int c;
+
+    while ((c = input()) != 0)
+        if (c == '*')
+        {
+            while ((c = input()) == '*')
+                ;
+
+            if (c == '/')
+                return;
+
+            if (c == 0)
+                break;
+        }
+    yyerror("comentario No terminado!");
+}*/
+
+
 

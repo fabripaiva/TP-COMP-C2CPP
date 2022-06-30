@@ -1,4 +1,4 @@
-/* A Bison parser, made by GNU Bison 3.7.  */
+/* A Bison parser, made by GNU Bison 3.5.1.  */
 
 /* Bison interface for Yacc-like parsers in C
 
@@ -31,9 +31,8 @@
    This special exception was added by the Free Software Foundation in
    version 2.2 of Bison.  */
 
-/* DO NOT RELY ON FEATURES THAT ARE NOT DOCUMENTED in the manual,
-   especially those whose name start with YY_ or yy_.  They are
-   private implementation details that can be changed or removed.  */
+/* Undocumented macros, especially those whose name start with YY_,
+   are private implementation details.  Do not rely on them.  */
 
 #ifndef YY_YY_Y_TAB_H_INCLUDED
 # define YY_YY_Y_TAB_H_INCLUDED
@@ -45,85 +44,77 @@
 extern int yydebug;
 #endif
 
-/* Token kinds.  */
+/* Token type.  */
 #ifndef YYTOKENTYPE
 # define YYTOKENTYPE
   enum yytokentype
   {
-    YYEMPTY = -2,
-    YYEOF = 0,                     /* "end of file"  */
-    YYerror = 256,                 /* error  */
-    YYUNDEF = 257,                 /* "invalid token"  */
-    VAR = 258,                     /* VAR  */
-    LAND = 259,                    /* LAND  */
-    LOR = 260,                     /* LOR  */
-    GEQ = 261,                     /* GEQ  */
-    LEQ = 262,                     /* LEQ  */
-    NOT = 263,                     /* NOT  */
-    GT = 264,                      /* GT  */
-    LT = 265,                      /* LT  */
-    NEQ = 266,                     /* NEQ  */
-    DEQ = 267,                     /* DEQ  */
-    PLUS = 268,                    /* PLUS  */
-    MINUS = 269,                   /* MINUS  */
-    MUL = 270,                     /* MUL  */
-    DIV = 271,                     /* DIV  */
-    MOD = 272,                     /* MOD  */
-    ASSIGNMENT = 273,              /* ASSIGNMENT  */
-    EX = 274,                      /* EX  */
-    MAIN_FUNC = 275,               /* MAIN_FUNC  */
-    IF = 276,                      /* IF  */
-    ELSE = 277,                    /* ELSE  */
-    ELSEIF = 278,                  /* ELSEIF  */
-    WHILE = 279,                   /* WHILE  */
-    FOR = 280,                     /* FOR  */
-    CLASS = 281,                   /* CLASS  */
-    STATIC = 282,                  /* STATIC  */
-    PUBLIC = 283,                  /* PUBLIC  */
-    PRIVATE = 284,                 /* PRIVATE  */
-    VOID = 285,                    /* VOID  */
-    PRINTF = 286,                  /* PRINTF  */
-    NEW = 287,                     /* NEW  */
-    DO = 288,                      /* DO  */
-    BREAK = 289,                   /* BREAK  */
-    RETURN = 290,                  /* RETURN  */
-    BOOL_VAL = 291,                /* BOOL_VAL  */
-    NUMBER = 292,                  /* NUMBER  */
-    QUOTED_STRING = 293,           /* QUOTED_STRING  */
-    QUOTED_CHAR = 294,             /* QUOTED_CHAR  */
-    LP = 295,                      /* LP  */
-    RP = 296,                      /* RP  */
-    LC = 297,                      /* LC  */
-    RC = 298,                      /* RC  */
-    LB = 299,                      /* LB  */
-    RB = 300,                      /* RB  */
-    COMA = 301,                    /* COMA  */
-    SEMICOLON = 302,               /* SEMICOLON  */
-    COLON = 303,                   /* COLON  */
-    QM = 304,                      /* QM  */
-    SQ = 305,                      /* SQ  */
-    DQ = 306,                      /* DQ  */
-    COMENTARIO = 307,              /* COMENTARIO  */
-    MLCOMENTARIO = 308,            /* MLCOMENTARIO  */
-    DEFINE = 309,                  /* DEFINE  */
-    STATIC_INT = 310,              /* STATIC_INT  */
-    STATIC_VOID = 311,             /* STATIC_VOID  */
-    STATIC_CHAR = 312,             /* STATIC_CHAR  */
-    STATIC_FLOAT = 313,            /* STATIC_FLOAT  */
-    STATIC_DOUBLE = 314,           /* STATIC_DOUBLE  */
-    INT = 315,                     /* INT  */
-    FLOAT = 316,                   /* FLOAT  */
-    DOUBLE = 317,                  /* DOUBLE  */
-    CHAR = 318,                    /* CHAR  */
-    BOOLEAN = 319,                 /* BOOLEAN  */
-    CONST = 320                    /* CONST  */
+    VAR = 258,
+    LAND = 259,
+    LOR = 260,
+    GEQ = 261,
+    LEQ = 262,
+    NOT = 263,
+    GT = 264,
+    LT = 265,
+    NEQ = 266,
+    DEQ = 267,
+    PLUS = 268,
+    MINUS = 269,
+    MUL = 270,
+    DIV = 271,
+    MOD = 272,
+    ASSIGNMENT = 273,
+    EX = 274,
+    MAIN_FUNC = 275,
+    IF = 276,
+    ELSE = 277,
+    ELSEIF = 278,
+    WHILE = 279,
+    FOR = 280,
+    CLASS = 281,
+    STATIC = 282,
+    PUBLIC = 283,
+    PRIVATE = 284,
+    VOID = 285,
+    PRINTF = 286,
+    NEW = 287,
+    DO = 288,
+    BREAK = 289,
+    RETURN = 290,
+    BOOL_VAL = 291,
+    NUMBER = 292,
+    QUOTED_STRING = 293,
+    QUOTED_CHAR = 294,
+    LP = 295,
+    RP = 296,
+    LC = 297,
+    RC = 298,
+    LB = 299,
+    RB = 300,
+    COMA = 301,
+    SEMICOLON = 302,
+    COLON = 303,
+    QM = 304,
+    SQ = 305,
+    DQ = 306,
+    COMENTARIO = 307,
+    MLCOMENTARIO = 308,
+    DEFINE = 309,
+    STATIC_INT = 310,
+    STATIC_VOID = 311,
+    STATIC_CHAR = 312,
+    STATIC_FLOAT = 313,
+    STATIC_DOUBLE = 314,
+    INT = 315,
+    FLOAT = 316,
+    DOUBLE = 317,
+    CHAR = 318,
+    BOOLEAN = 319,
+    CONST = 320
   };
-  typedef enum yytokentype yytoken_kind_t;
 #endif
-/* Token kinds.  */
-#define YYEOF 0
-#define YYerror 256
-#define YYUNDEF 257
+/* Tokens.  */
 #define VAR 258
 #define LAND 259
 #define LOR 260
@@ -192,12 +183,12 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 44 "c2cpp.y"
+#line 56 "traductor.y"
 
 int data_type;
 char var_name[MAX_NAME_LEN];
 
-#line 201 "y.tab.h"
+#line 192 "y.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;
