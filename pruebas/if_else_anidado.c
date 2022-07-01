@@ -3,7 +3,13 @@ int main(){
     int y = 8;
     if(x<y){
         printf("Si");
-        if(5==7){
+        if(3==8){
+            if(3==8){
+            	if (3!=8){
+            	   printf("No");
+            	}
+               printf("No");
+            }
             printf("No");
         }
         else{
@@ -11,7 +17,17 @@ int main(){
         }
     }
     else{
-        printf("No");
+    	if(3!=8){
+    	   printf("Corresponde");
+    	} else{
+    	   printf("No corresponde");	
+    	}
+	if (3==8){
+	   printf("Corresponde");
+	} else {
+	   printf("No Corresponde");
+	}    	
+
     }
     return 0;
 }
