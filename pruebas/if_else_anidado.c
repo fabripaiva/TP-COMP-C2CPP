@@ -1,6 +1,6 @@
 int main(){
-    int x = 5;
-    int y = 7;
+    int x = 3;
+    int y = 8;
     if(x<y){
         printf("Si");
         if(5==7){

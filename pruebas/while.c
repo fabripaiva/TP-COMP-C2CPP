@@ -1,7 +1,7 @@
 int main(){ 
-    int num; 
-    while (num == 1) { 
-        printf ("Hola"); 
+    int band; 
+    while (band == 1) { 
+        printf ("Esto es una prueba"); 
     } 
 return 0; 
 }

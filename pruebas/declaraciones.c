@@ -2,11 +2,12 @@ int main(){
     int a;
     int b = 1;
     float c;
-    float d = 1.0;
+    float d = 2.5;
     double e;
-    double f = 0.01;
+    double f = 0.001;
     char g;
-    char h = 'a';
+    char i = 'a';
+    char p = 'b';
 
     return 0;
 }

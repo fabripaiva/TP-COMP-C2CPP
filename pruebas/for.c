@@ -1,7 +1,7 @@
 int main(){
     int i;
-    for(i=0; i<=5; i++){
-        printf("Hola Mundo!");
+    for(i=0; i<=10; i++){
+        printf("Esto es una prueba");
     }
     return 0;
 }
